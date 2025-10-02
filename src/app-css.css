@@ -1,0 +1,61 @@
+/* App-specific styles */
+.App {
+  text-align: left;
+}
+
+/* Enhanced accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .bg-gray-900 {
+    background-color: #000000;
+  }
+  
+  .bg-gray-800 {
+    background-color: #1a1a1a;
+  }
+  
+  .text-gray-300 {
+    color: #ffffff;
+  }
+  
+  .border-gray-700 {
+    border-color: #404040;
+  }
+}
+
+/* Focus management for keyboard navigation */
+.focus-outline:focus {
+  outline: 2px solid #60A5FA;
+  outline-offset: 2px;
+}
+
+/* Print styles */
+@media print {
+  nav,
+  footer {
+    display: none;
+  }
+  
+  body {
+    background: white;
+    color: black;
+  }
+  
+  .bg-gray-900,
+  .bg-gray-800 {
+    background: white !important;
+  }
+  
+  .text-white,
+  .text-gray-300 {
+    color: black !important;
+  }
+}
