@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="description" content="Current Meta - Oracles of Innovation. Visionary consulting providing prophetic insights and transformative innovation solutions." />
+    <meta name="keywords" content="innovation, oracles, consulting, insights, transformation, visionary, strategic foresight, breakthrough solutions" />
+    <meta name="author" content="Current Meta Team" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Current Meta - Oracles of Innovation" />
+    <meta property="og:description" content="Visionary consulting providing prophetic insights and transformative innovation solutions" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourusername.github.io/current-meta" />
+    <meta property="og:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Current Meta - Oracles of Innovation" />
+    <meta name="twitter:description" content="Visionary consulting providing prophetic insights and transformative innovation solutions" />
+    <meta name="twitter:image" content="%PUBLIC_URL%/og-image.png" />
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Current Meta",
+      "description": "Oracles of Innovation - Visionary Consulting Solutions",
+      "url": "https://yourusername.github.io/current-meta",
+      "logo": "https://yourusername.github.io/current-meta/logo192.png",
+      "sameAs": [
+        "https://github.com/yourusername/current-meta"
+      ],
+      "foundingDate": "2025",
+      "specialty": "Visionary Intelligence, Innovation Oracles, Future-Forward Analytics"
+    }
+    </script>
+    
+    <title>Current Meta - Oracles of Innovation</title>
+    
+    <style>
+      /* Critical CSS for initial paint */
+      body {
+        margin: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background-color: #0f172a;
+        color: #f8fafc;
+        overflow-x: hidden;
+      }
+      
+      /* Loading spinner */
+      .loading-spinner {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 40px;
+        border: 2px solid #1e293b;
+        border-top: 2px solid #60A5FA;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+        z-index: 9999;
+      }
+      
+      @keyframes spin {
+        0% { transform: translate(-50%, -50%) rotate(0deg); }
+        100% { transform: translate(-50%, -50%) rotate(360deg); }
+      }
+      
+      .loading-text {
+        position: fixed;
+        top: 60%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #64748b;
+        font-size: 14px;
+        font-weight: 300;
+        letter-spacing: 0.1em;
+      }
+    </style>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    
+    <!-- Loading state -->
+    <div id="loading" class="loading-spinner"></div>
+    <div class="loading-text">Loading insights...</div>
+    
+    <div id="root"></div>
+    
+    <script>
+      // Hide loading spinner when React app loads
+      window.addEventListener('load', function() {
+        setTimeout(function() {
+          const loading = document.getElementById('loading');
+          const loadingText = document.querySelector('.loading-text');
+          if (loading) loading.style.display = 'none';
+          if (loadingText) loadingText.style.display = 'none';
+        }, 100);
+      });
+    </script>
+  </body>
+</html>
